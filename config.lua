@@ -3,27 +3,25 @@ local isTall = ("iPhone" == system.getInfo("model") or "iPod touch" == system.ge
 
 --もし、isTallであれば次の処理
 if(isTall)then
-application = {
-	content = {
-		width = 320,
-		height = 568, 
-		scale = "letterBox",
-		fps = 30,
-	},
-}
-
+	application = {
+		content = {
+			width = 320,
+			height = 568, 
+			scale = "letterBox",
+			fps = 30,
+		},
+	}
 --もし、isTall以外であれば次の処理
+
 else
-
---もともとconfig.luaに記述されていたのと同じ内容
-application = {
-	content = {
-		width = 320,
-		height = 480, 
-		scale = "letterBox",
-		fps = 30,
-	},
-}
-
+	--もともとconfig.luaに記述されていたのと同じ内容
+	application = {
+		content = {
+			width = 320,
+			height = 480, 
+			scale = "letterBox",
+			fps = 30,
+		},
+	}
 --条件式を終了するendを追記
 end
